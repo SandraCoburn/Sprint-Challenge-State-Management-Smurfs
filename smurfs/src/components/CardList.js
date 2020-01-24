@@ -6,7 +6,7 @@ import { fetchSmurf } from "../actions";
 
 const CardList = props => {
   return (
-    <div>
+    <div className="card-list">
       <button onClick={props.fetchSmurf}>Get Smurfs</button>
       {props.smurfs.map((smurf, index) => (
         <Card key={smurf.id} smurf={smurf} />

@@ -8,6 +8,16 @@
   /* flex-flow: row wrap;
   justify-content: space-around; */
 }
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display:700i|Source+Sans+Pro&display=swap");
+body {
+  overflow-x: hidden;
+  background-color: #be9c38;
+  background-image: url("https://besthqwallpapers.com/Uploads/26-3-2017/14803/thumb2-smurfs-the-lost-village-2017-all-characters-4k.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  padding: 0;
+  margin: 0;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -25,6 +35,10 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+
+/* .card-list {
+  display: flex;
+} */
 .card {
   display: flex;
   flex-flow: column nowrap;
@@ -32,11 +46,11 @@
   position: relative;
   background-image: linear-gradient(rgb(43, 43, 14), #faf54e);
   border-radius: 4px;
-  height: 20%;
+  height: 10%;
   margin: 8px;
   margin-left: 30%;
   padding: 16px;
-  width: 40%;
+  width: 20%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -68,12 +82,13 @@ button {
   border: none;
   padding: 1rem 2rem;
   margin: 0;
+  height: 12vh;
   text-decoration: none;
   background: #414141;
   color: #ffffff;
   font-family: inherit;
   margin-bottom: 2%;
-  font-size: 1rem;
+  font-size: 0.8rem;
   cursor: pointer;
   text-align: center;
   border-radius: 4px;
