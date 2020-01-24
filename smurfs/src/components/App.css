@@ -45,21 +45,22 @@
 }
 
 form {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: flex-end;
 }
 form > input {
-  background-color: #f0e2ec;
-  border: 0;
-  padding: 6px 0;
+  background-color: #515a1e;
+  border-radius: 3px;
+  padding: 2px 0;
   font-size: 1rem;
-  width: 60%;
+  width: 70%;
   outline: 0;
   color: white;
-  border-bottom: 1px solid #ad97a8;
+  border-bottom: 1px solid #dce99b;
   margin-right: 8px;
-  min-height: 1vh;
+  margin-bottom: 2%;
+  height: 10vh;
 }
 
 button {
@@ -71,6 +72,7 @@ button {
   background: #414141;
   color: #ffffff;
   font-family: inherit;
+  margin-bottom: 2%;
   font-size: 1rem;
   cursor: pointer;
   text-align: center;
