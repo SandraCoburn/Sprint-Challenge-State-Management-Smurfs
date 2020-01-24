@@ -5,7 +5,11 @@ import { fetchSmurf, addSmurf } from "../actions";
 const Card = props => {
   return (
     <div className="card">
-      <p>{props.smurf}</p>
+      <h1>Smurf</h1>
+
+      <p>Name: {props.smurf.name}</p>
+      <p>Age: {props.smurf.age}</p>
+      <p>Height: {props.smurf.height}</p>
     </div>
   );
 };

@@ -8,18 +8,15 @@ const CardList = props => {
   return (
     <div>
       <button onClick={props.fetchSmurf}>Get Smurfs</button>
-      {!props.smurfs && !props.isLoading && <h2> Get another Smurf!</h2>}
-      {props.smurfs.map(smurf => {
-        <Card key={smurf.id} smurf={smurf} />;
-      })}
-
-      <p>New smurf</p>
+      {props.smurfs.map((smurf, index) => (
+        <Card key={smurf.id} smurf={smurf} />
+      ))}
     </div>
   );
 };
 const mapStateToProps = state => {
   return {
-    smurfs: state.smurfs
+    ...state
   };
 };
 export default connect(mapStateToProps, { fetchSmurf })(CardList);
