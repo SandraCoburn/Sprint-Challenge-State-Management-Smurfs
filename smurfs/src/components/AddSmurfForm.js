@@ -25,7 +25,7 @@ const AddSmurfForm = props => {
       <input type="text" name="age" onChange={handleChanges} />
       <label htmlFor="height">Height:</label>
       <input type="text" name="height" onChange={handleChanges} />
-      <button type="button" onClick={() => props.addSmurf(newSmurf)}>
+      <button type="button" onClick={props.addSmurf(newSmurf)}>
         Add new Smurf
       </button>
     </form>

@@ -33,6 +33,7 @@ export const reducer = (state = initialState, action) => {
       return {
         ...state,
         isLoading: false,
+        // smurfs: [...state.smurfs, action.payload]
         smurfs: state.smurfs.concat(action.payload)
       };
     case ADDING_SMURF_START:

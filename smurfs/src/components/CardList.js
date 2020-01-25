@@ -8,7 +8,7 @@ const CardList = props => {
   return (
     <div className="card-list">
       <button onClick={props.fetchSmurf}>Get Smurfs</button>
-      {props.smurfs.map((smurf, index) => (
+      {props.smurfs.map(smurf => (
         <Card key={smurf.id} smurf={smurf} />
       ))}
     </div>
